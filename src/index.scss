@@ -1,0 +1,41 @@
+@import 'main';
+@import 'normalize.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+}
+
+p {
+  @extend %p;
+}
+
+h1 {
+  @extend %h1;
+}
+
+h2 {
+  @extend %h2;
+}
+
+h3 {
+  @extend %h3;
+}
+
+h4 {
+  @extend %h4;
+}
+
+button {
+  // Not sure why the normalizer remove this
+  cursor: pointer;
+}

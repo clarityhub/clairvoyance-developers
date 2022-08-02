@@ -1,0 +1,55 @@
+@import 'main';
+@import 'layout';
+
+.sidebar {
+  height: calc(100vh - #{$header-height});
+  padding-top: 38px;
+  width: $sidebar-width + 30px;
+}
+
+.sidebarList {
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.sidebarItem {
+  width: 100%;
+
+  a {
+    @extend %p;
+    background-color: transparentize($clair-dark, 1);
+    border: 0;
+    border-radius: 8px;
+    color: $clair-dark;
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 5px 15px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    width: auto;
+
+    &:hover {
+      background-color: transparentize($clair-dark, 0.85);
+      color: $clair-dark;
+      text-decoration: none;
+    }
+  }
+
+  span {
+    vertical-align: middle;
+  }
+}
+
+.sidebarItemHeader {
+  @extend %h3;
+  
+  font-size: rem(18px);
+  padding: 15px 20px 0px;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}

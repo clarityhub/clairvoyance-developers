@@ -1,0 +1,26 @@
+@import 'main';
+@import 'layout';
+
+.logo {
+  padding: 11px 24px;
+  width: $sidebar-width;
+
+  svg {
+    float: left;
+    height: 54px;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 54px;
+  }
+
+  span {
+    @extend %h1;
+
+    color: $clair-primary;
+    display: inline-block;
+    font-size: rem(18px);
+    line-height: 1.6rem;
+    margin-top: 2px;
+    vertical-align: middle;
+  }
+}

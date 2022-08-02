@@ -1,0 +1,9 @@
+@import 'main';
+
+.headerProfile {
+  @extend %clearfix;
+
+  > div {
+    float: right;
+  }
+}

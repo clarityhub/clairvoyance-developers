@@ -1,0 +1,14 @@
+@import 'main';
+@import 'layout';
+
+.header {
+  @extend %shadow;
+
+  background-color: $clair-light;
+  display: flex;
+  height: $header-height;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  z-index: 10000;
+}
